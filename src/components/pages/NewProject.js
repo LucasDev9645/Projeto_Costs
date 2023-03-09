@@ -1,3 +1,5 @@
+import styles from "./NewProject.module.css";
+
 const NewProject = () => {
   return (
     <div>
