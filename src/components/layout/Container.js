@@ -1,7 +1,11 @@
-//import styles from "./Container.modules.css";
+import styles from "./Container.module.css";
 
-const container = (props) => {
-  return <div>{props.children}</div>;
+const Container = (props) => {
+  return (
+    <div className={`${styles.container} ${styles[props.customClass]}`}>
+      {props.children}
+    </div>
+  );
 };
 
-export default container;
+export default Container;
